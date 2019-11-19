@@ -13,18 +13,19 @@
     "@mdx-js/react": "^1.3.0",
     "@playlyfe/gql": "^2.6.2",
     "@rebass/components": "^4.0.0-1",
-    "algoliasearch": "^3.33.0",
-    "dotenv": "^8.0.0",
+    "algoliasearch": "^3.35.1",
+    "dotenv": "^8.2.0",
     "emotion": "^10.0.14",
     "emotion-server": "^10.0.14",
     "emotion-theming": "^10.0.14",
     "gatsby": "^2.13.62",
     "gatsby-link": "^2.2.5",
-    "gatsby-plugin-algolia": "^0.3.3",
+    "gatsby-plugin-algolia": "^0.3.4",
     "gatsby-plugin-emotion": "^4.1.2",
     "gatsby-plugin-gtag": "^1.0.11",
     "gatsby-plugin-layout": "^1.1.3",
     "gatsby-plugin-mdx": "^1.0.24",
+    "gatsby-plugin-postcss": "^2.1.15",
     "gatsby-plugin-react-helmet": "^3.1.3",
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-plugin-sitemap": "^2.2.6",
@@ -56,6 +57,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.2",
-    "prism-react-renderer": "^0.1.7"
+    "prism-react-renderer": "^0.1.7",
+    "tailwindcss": "^1.1.3"
   }
 }

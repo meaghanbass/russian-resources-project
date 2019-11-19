@@ -1,13 +1,13 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://learn.hasura.io",
+		"siteUrl": "https://meaghanbass.io",
 		"gaTrackingId": null
 	},
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
-		"logoLink": "https://learn.hasura.io",
-		"title": "Gatsby Gitbook Boilerplate",
+		"logoLink": "https://meaghanbass.io",
+		"title": "Gitbook",
 		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
 		"helpUrl": "",
 		"tweetText": "",
@@ -28,14 +28,14 @@ const config = {
     		"/codeblock"
 		],
 		"links": [
-			{ "text": "Hasura", "link": "https://hasura.io"},
+			{ "text": "Hasura", "link": "https://meaghanbass.io"},
 		],
 		"frontline": false,
 		"ignoreIndex": true,
 	},
 	"siteMetadata": {
-		"title": "Gatsby Gitbook Boilerplate | Hasura",
-		"description": "Documentation built with mdx. Powering learn.hasura.io ",
+		"title": "Gitbook | MB",
+		"description": "Documentation built with mdx. Powering meaghanbass.io ",
 		"ogImage": null,
 		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
 		"favicon": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg"

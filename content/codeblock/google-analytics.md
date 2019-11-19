@@ -1,7 +1,8 @@
 ---
-title: "Sub Page"
-metaTitle: "Syntax Highlighting is the meta title tag for this page"
-metaDescription: "This is the meta description for this page"
+title: "Google Analytics"
+metaTitle: "Google Analytics metaTitle"
+metaDescription: "Google Analytics metaDescription"
+tags: ["google","analytics","dev"]
 ---
 
 The following is a code block with JavaScript language syntax highlighting.
@@ -17,10 +18,4 @@ The following is a code block with diff. Lines with `+` highlighted in green sha
 ```javascript
 - const data = ['1','2'];
 + const data = [1,2];
-```
-
-## Live Editing example
-
-```javascript react-live=true
-<button className={'btn btn-default'}>Change my text</button>
 ```

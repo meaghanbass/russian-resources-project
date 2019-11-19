@@ -9,6 +9,7 @@ import RightSidebar from "./rightSidebar";
 const Wrapper = styled('div')`
   display: flex;
   justify-content: space-between;
+  background-color: #F5F7FB;
 
   @media only screen and (max-width: 767px) {
     display: block;
@@ -20,20 +21,25 @@ const Content = styled('main')`
   flex-grow: 1;
   margin: 0px 88px;
   margin-top: 3rem;
+  margin-bottom: 3rem;
+  // background-color: #1F1F1F;
+  background-color: white;
+  height: max-content;
 
   @media only screen and (max-width: 1023px) {
-    padding-left: 0;
+    // padding-left: 0;
     margin: 0 10px;
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 `;
 
 const MaxWidth = styled('div')`
 
-  @media only screen and (max-width: 50rem) {
-    width: 100%;
-    position: relative;
-  }
+  // @media only screen and (max-width: 50rem) {
+  //   width: 100%;
+  //   position: relative;
+  // }
 `;
 const LeftSideBarWidth = styled('div')`
   width: 298px;
@@ -48,8 +54,8 @@ const Layout = ({ children, location }) => (
         <LeftSideBarWidth className={'hidden-xs'}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
-        <Content>
-          <MaxWidth>{children}</MaxWidth>
+        <Content className="p-8 rounded-lg max-h-full">
+          <MaxWidth className="w-full">{children}</MaxWidth>
         </Content>
         <RightSideBarWidth className={'hidden-xs'}>
           <RightSidebar location={location} />

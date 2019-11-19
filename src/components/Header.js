@@ -5,6 +5,7 @@ import Link from './link';
 import './styles.css';
 import config from '../../config.js';
 
+
 import Search from './search/index';
 const help = require('./images/help.svg');
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
@@ -61,12 +62,12 @@ const Header = ({location}) => (
         <div className={'navBarWrapper'}>
           <nav className={'navbar navbar-default navBarDefault'}>
             <div className={'navbar-header navBarHeader'}>
-              <Link to={finalLogoLink} className={'navbar-brand navBarBrand'}>
-                {logo.image !== '' ?
+              <Link to="/" className={'navbar-brand navBarBrand'}>
+                {/* {logo.image !== '' ?
                   (<img className={'img-responsive'} src={logo.image} alt={'logo'} />)
                   :
                   (<img className={'img-responsive'} src={logoImg} alt={'logo'} />)
-                }
+                } */}
                 <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
               <button type="button" className={'navbar-toggle collapsed navBarToggle'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -112,12 +113,12 @@ const Header = ({location}) => (
                     <a href={'https://twitter.com/intent/tweet?&text=' + tweetText} target="_blank">
                       <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
                     </a>
-                   </li>) : null
+                    </li>) : null
                 }
-                {githubUrl !== '' ?
+                {/* {githubUrl !== '' ?
                   (<li className={'githubBtn'}>
                     <GitHubButton href={githubUrl} data-show-count="true" aria-label="Star on GitHub">Star</GitHubButton>
-                  </li>) : null}
+                  </li>) : null} */}
               </ul>
             </div>
           </nav>

@@ -9,7 +9,8 @@ const forcedNavOrder = config.sidebar.forcedNavOrder;
 
 const Sidebar = styled('aside')`
   width: 100%;
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: #F5F7FB;
   border-right: 1px solid #ede7f3;
   height: 100vh;
   overflow: auto;
