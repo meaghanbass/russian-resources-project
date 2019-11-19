@@ -7,7 +7,7 @@ import { Search } from "styled-icons/fa-solid/Search";
 const SearchIcon = styled(Search)`
   width: 1em;
   pointer-events: none;
-  margin-right: 10px
+  margin-right: 10px;
 `
 const focus = css`
   background: white;
@@ -77,3 +77,24 @@ export default connectSearchBox(({ refine, ...rest }) => {
     </Form>
   )}
 );
+
+
+
+
+// import React from "react"
+// import { connectSearchBox } from "react-instantsearch-dom"
+
+// import { SearchIcon, Form, Input } from "./styles"
+
+// export default connectSearchBox(({ refine, ...rest }) => (
+//   <Form>
+//     <Input
+//       type="text"
+//       placeholder="Search"
+//       aria-label="Search"
+//       onChange={e => refine(e.target.value)}
+//       {...rest}
+//     />
+//     <SearchIcon />
+//   </Form>
+// ))

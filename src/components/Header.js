@@ -6,7 +6,8 @@ import './styles.css';
 import config from '../../config.js';
 
 
-import Search from './search/index';
+// import Search from './search/index';
+import Search from "./search"
 const help = require('./images/help.svg');
 const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
 
@@ -16,6 +17,7 @@ if(isSearchEnabled && config.header.search.indexName) {
     { name: `${config.header.search.indexName}`, title: `Results`, hitComp: `PageHit` },
   );
 }
+
 
 import Sidebar from "./sidebar";
 
@@ -63,11 +65,6 @@ const Header = ({location}) => (
           <nav className={'navbar navbar-default navBarDefault'}>
             <div className={'navbar-header navBarHeader'}>
               <Link to="/" className={'navbar-brand navBarBrand'}>
-                {/* {logo.image !== '' ?
-                  (<img className={'img-responsive'} src={logo.image} alt={'logo'} />)
-                  :
-                  (<img className={'img-responsive'} src={logoImg} alt={'logo'} />)
-                } */}
                 <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
               <button type="button" className={'navbar-toggle collapsed navBarToggle'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -77,20 +74,20 @@ const Header = ({location}) => (
                 <span className={'icon-bar'}></span>
               </button>
             </div>
-            {isSearchEnabled ? (
+            {/* {isSearchEnabled ? ( */}
               <div className={'searchWrapper hidden-xs navBarUL'}>
                 <Search collapse indices={searchIndices} />
               </div>
-              ): null}
+              {/* ): null} */}
             <div id="navbar" className={'navbar-collapse collapse navBarCollapse'}>
               <div className={'visible-xs'}>
                 <Sidebar location={location} />
                 <hr/>
-                {isSearchEnabled ? (
+                {/* {isSearchEnabled ? ( */}
                   <div className={'searchWrapper navBarUL'}>
                     <Search collapse indices={searchIndices} />
                   </div>
-                  ): null}
+                  {/* ): null} */}
               </div>
               <ul className={'nav navbar-nav navBarUL navBarNav navbar-right navBarULRight'}>
                 {headerLinks.map((link, key) => {
@@ -115,10 +112,6 @@ const Header = ({location}) => (
                     </a>
                     </li>) : null
                 }
-                {/* {githubUrl !== '' ?
-                  (<li className={'githubBtn'}>
-                    <GitHubButton href={githubUrl} data-show-count="true" aria-label="Star on GitHub">Star</GitHubButton>
-                  </li>) : null} */}
               </ul>
             </div>
           </nav>
@@ -129,3 +122,21 @@ const Header = ({location}) => (
 );
 
 export default Header;
+
+
+
+
+// import React from "react"
+// import Search from "./search"
+
+// const searchIndices = [
+//   { name: `Pages`, title: `Pages`, hitComp: `PageHit` }
+// ]
+
+// const Header = ({ site, transparent }) => (
+//   <React.Fragment>
+//     <Search className="bg-red-100" collapse indices={searchIndices} />
+//   </React.Fragment>
+// )
+
+// export default Header
