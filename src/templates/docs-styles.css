@@ -113,7 +113,8 @@
 
 mark {
     background-image: linear-gradient(270deg,#fff,#ebf4ff);
-    height: 2rem;
+    min-height: 2rem;
+    height: max-content;
     display: inline-block;
     width: 90%;
     padding-left: 20px;
