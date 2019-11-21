@@ -75,9 +75,9 @@ const Header = ({location}) => (
               </button>
             </div>
             {/* {isSearchEnabled ? ( */}
-              <div className={'searchWrapper hidden-xs navBarUL'}>
+              {/* <div className={'searchWrapper hidden-xs navBarUL'}>
                 <Search collapse indices={searchIndices} />
-              </div>
+              </div> */}
               {/* ): null} */}
             <div id="navbar" className={'navbar-collapse collapse navBarCollapse'}>
               <div className={'visible-xs'}>

@@ -5,8 +5,9 @@ import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
 import styled, { injectGlobal } from "react-emotion";
 import { Layout, Link } from "$components";
 import NextPrevious from '../components/NextPrevious';
-import '../components/styles.css';
+// import '../components/styles.css';
 import config from '../../config';
+import './docs-styles.css';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
@@ -136,21 +137,23 @@ export default class MDXRuntimeTest extends Component {
           {metaDescription ? <meta property="twitter:description" content={metaDescription} /> : null}
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
-        <div className={'titleWrapper'}>
-          <h1 className={'title'}>
-            {mdx.fields.title}
-          </h1>
-          {/* <Edit className={'mobileView'}>
-            <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>
-              <img src={gitHub} alt={'Github logo'} /> Edit on GitHub
-            </Link>
-          </Edit> */}
-        </div>
-        <div className={'mainWrapper'}>
-          <MDXRenderer>{mdx.body}</MDXRenderer>
-        </div>
-        <div className={'addPaddTopBottom'}>
-          <NextPrevious mdx={mdx} nav={nav} />
+        <div className="markdown-body">
+          <div className={'titleWrapper'}>
+            <h1 className={'title'}>
+              {mdx.fields.title}
+            </h1>
+            {/* <Edit className={'mobileView'}>
+              <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>
+                <img src={gitHub} alt={'Github logo'} /> Edit on GitHub
+              </Link>
+            </Edit> */}
+          </div>
+          <div className={'mainWrapper'}>
+            <MDXRenderer>{mdx.body}</MDXRenderer>
+          </div>
+          <div className={'addPaddTopBottom'}>
+            <NextPrevious mdx={mdx} nav={nav} />
+          </div>
         </div>
       </Layout>
     );

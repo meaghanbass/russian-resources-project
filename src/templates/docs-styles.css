@@ -1,0 +1,155 @@
+.markdown-body * {
+    color: #4a5568 !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.markdown-body * ::selection {
+    background: #e2e8f0;
+}
+
+.markdown-body .mainWrapper * {
+    line-height: 2rem;
+}
+
+.markdown-body * b, .markdown-body * strong {
+    font-weight: 600 !important;
+}
+
+.markdown-body p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.markdown-body h1 {
+    font-size: 3rem;
+}
+
+.markdown-body h2 {
+    font-size: 2.25rem;
+}
+
+.markdown-body h3 {
+    font-size: 1.875rem;
+}
+
+.markdown-body h4 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.markdown-body h5 {
+    font-size: 1.25rem;
+}
+
+.markdown-body h6 {
+    font-size: 1.125rem;
+}
+
+.markdown-body ol {
+    counter-reset: section;
+    list-style-type: none;
+    padding: 0;
+}
+
+.markdown-body ol li {
+    padding-left: 21px;
+}
+
+.markdown-body ol li::before {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+    margin-right: 5px;
+    color: #a0aec0;
+    margin-left: -21px;
+}
+
+.markdown-body ul {
+    margin: 0;
+    padding: 0;
+}
+
+.markdown-body ul li {
+    padding-left: 1.5rem;
+}
+
+.markdown-body ul li::before {
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin-left: -3rem;
+}
+
+.markdown-body ul li ul li {
+    /* margin-left: 1.5rem; */
+    padding-left: 21px;
+}
+
+.markdown-body ul li ul li::before {
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px #a0aec0 solid;
+    border-radius: 5px;
+    height: 5px;
+    width: 5px;
+    margin-bottom: 3px;
+    margin-left: -21px;
+    position: relative;
+    z-index: 100;
+}
+
+.markdown-body blockquote {
+    background-image: linear-gradient(270deg,#fff,#ebf4ff);
+    margin: 1rem 0;
+    border-left: 5px solid #a0aec0;
+}
+
+mark {
+    background-image: linear-gradient(270deg,#fff,#ebf4ff);
+    height: 2rem;
+    display: inline-block;
+    width: 90%;
+    padding-left: 20px;
+    position: relative;
+    z-index: 0;
+    margin-left: -20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.markspan {
+    float: right;
+    font-size: 0.75rem;
+}
+
+/* mark:hover::after {
+    content: attr(data-tooltip);
+    background: white;
+    padding: 5px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 lightgray;
+} */
+
+ins {
+    width: max-content;
+    display: inline-block;
+}
+
+ins:hover::after {
+    content: attr(data-tooltip);
+    background: lightgray;
+    padding: 5px;
+    position: relative;
+    top: -1.7rem;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 lightgray;
+    left: -50%;
+}
