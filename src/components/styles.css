@@ -127,6 +127,10 @@ h6 {
 .formElement svg path {
   fill: #fff;
 }
+#navbar {
+  width: 335px;
+  padding-right: 0;
+}
 .searchInput {
   width: calc(100% - 26px);
   background-color: transparent !important;
@@ -137,25 +141,27 @@ h6 {
   outline: none;
   border: 0;
 }
-.searchWrapper
-{
+.searchWrapper {
   padding-left: 0px;
-  padding-right: 20px;
-  flex: 1;
-  max-width: 600px;
+  /* padding-right: 20px; */
+  /* flex: 1; */
+  /* max-width: 600px; */
   position: relative;
+  min-width: 600px;
+  width: max-content;
+  margin: auto;
 }
 .searchWrapper a {
   font-weight: 500;
 }
-.hitWrapper
-{
+.hitWrapper {
   background-color: #fff;
-  padding: 4px;
+  /* padding: 4px; */
   border-radius: 4px;
   position: absolute;
+  width: 600px;
   max-width: 600px;
-  top: 40px;
+  /* top: 40px; */
   border: 1px solid #ccc;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
   height: auto;
@@ -169,9 +175,25 @@ h6 {
 .hideResults {
   display: none;
 }
+.ais-Hits-item {
+  padding: 5px;
+  padding-left: 15px;
+}
+.ais-Hits-item:hover {
+  background-color: #f7fafc;
+}
 .hitWrapper span {
-  color: black;
+  /* color: black; */
   font-size: 14px;
+  line-height: 2;
+  font-weight: normal;
+}
+.ais-Highlight-highlighted {
+  font-style: normal;
+}
+.ais-Highlight-nonHighlighted {
+  opacity: 0.5;
+  margin-left: 1px;
 }
 .headerTitle a {
   color: #fff;
@@ -218,7 +240,7 @@ h6 {
 }
 .navBarHeader {
   min-width: 335px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 .navBarBrand {
   height: auto;
@@ -340,6 +362,7 @@ pre {
 
 .rightSideBarUL {
   margin-top: 32px;
+  /* width: 298px; */
 }
 
 .rightSideBarUL li {
@@ -612,7 +635,6 @@ padding: 6px 13px; }
 
 table tr td {
   border: 1px solid #cccccc;
-  text-align: left;
   margin: 0;
 padding: 6px 13px; }
 

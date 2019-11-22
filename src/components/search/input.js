@@ -52,11 +52,11 @@ const Input = styled.input`
   {hightlight-next-line}
   ${props => (props.collapse ? collapse : expand)};
 `
-const Form = styled.form`
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-`
+// const Form = styled.form`
+//   display: flex;
+//   flex-direction: row-reverse;
+//   align-items: center;
+// `
 
 export default connectSearchBox(({ refine, ...rest }) => {
   const searchCustom = '';
@@ -64,19 +64,19 @@ export default connectSearchBox(({ refine, ...rest }) => {
     e.preventDefault();
   }
   return (
-    <Form className="bg-white p-4" 
+    <form className="flex bg-white p-4" 
       // className={'formElement'} 
       onSubmit={preventSubmit}>
       <SearchIcon />
       <Input
-        className={'searchInput ' + searchCustom}
+        className="text-black"
         type="text"
         placeholder="Search"
         aria-label="Search"
         onChange={e => refine(e.target.value)}
         {...rest}
       />
-    </Form>
+    </form>
   )}
 );
 

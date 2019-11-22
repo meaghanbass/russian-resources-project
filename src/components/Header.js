@@ -74,20 +74,20 @@ const Header = ({location}) => (
                 <span className={'icon-bar'}></span>
               </button>
             </div>
-            {/* {isSearchEnabled ? ( */}
-              {/* <div className={'searchWrapper hidden-xs navBarUL'}>
+            {isSearchEnabled ? (
+              <div className={'searchWrapper hidden-xs navBarUL'}>
                 <Search collapse indices={searchIndices} />
-              </div> */}
-              {/* ): null} */}
+              </div>
+              ): null}
             <div id="navbar" className={'navbar-collapse collapse navBarCollapse'}>
               <div className={'visible-xs'}>
                 <Sidebar location={location} />
                 <hr/>
-                {/* {isSearchEnabled ? ( */}
+                {isSearchEnabled ? (
                   <div className={'searchWrapper navBarUL'}>
                     <Search collapse indices={searchIndices} />
                   </div>
-                  {/* ): null} */}
+                  ): null}
               </div>
               <ul className={'nav navbar-nav navBarUL navBarNav navbar-right navBarULRight'}>
                 {headerLinks.map((link, key) => {

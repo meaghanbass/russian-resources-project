@@ -6,13 +6,13 @@ tags: ["history","middle east","Glossary"]
 ---
 
 #### Terms  
-**zakah** - alms  
+**<del>zakah</del> zakaah** *(زكاة)* - alms  
 **jihadism** (*jahadiyyah - الجهادية*) - struggle  
 **salaf** - original companions of Muhammad  
-**'ulama** - clerical establishment  
+**<del>'ulama</del> ulema** *(علماء)* - clerical establishment  
 **Hadith** - collected sayings and actions of Muhammad  
 **ummah** - caliphate, symbol of the global Muslim community, nation  
-**kafir** - apostate  
+**<del>kafir</del> kaafir (pl.) kuffaar** *(كافر (ج) كفار)* - apostate, infidel  
 **bida'** - religious "innovations"  
 **waqf** - Jerusalem's Muslim authorities  
 **Fatiha** - "The Opening" - first chapter (s&umacr;rah) of the Quran  
@@ -21,7 +21,7 @@ tags: ["history","middle east","Glossary"]
 **dar al-kufr** - the land of unbelief  
 **fard 'ala l'ayn** - individual obligation  
 **fard 'ala l'kifaya** - collective obligation  
-**salaat** - prayer  
+**<del>salaat</del> salaah** *(صلاة)*- prayer  
 
 
 #### People  

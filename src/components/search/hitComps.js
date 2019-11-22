@@ -6,7 +6,8 @@ export const PageHit = clickHandler => ({ hit }) => (
   <div>
     <Link to={hit.slug} onClick={clickHandler}>
       <div>
-        <Highlight attribute="title" hit={hit} tagName="mark" />
+        <Highlight className="text-gray-800" attribute="title" hit={hit} />
+        <span className="float-right text-gray-400">{hit.slug}</span>
       </div>
     </Link>
     <Snippet attribute="excerpt" hit={hit} tagName="mark" />
