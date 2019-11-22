@@ -154,3 +154,22 @@ ins:hover::after {
     box-shadow: 0 0 3px 0 lightgray;
     left: -50%;
 }
+
+table {
+    width: max-content;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+table tr td {
+    min-width: 200px;
+}
+
+table tr:nth-child(2n) {
+    background-color: #F5F7FB;
+}
+
+table tr th, table tr td {
+    border: 1px solid #cbd5e0;
+}

@@ -1,8 +1,8 @@
 ---
 title: "Russian"
-metaTitle: "This is the title tag of this page"
-metaDescription: "This is the meta description"
-tags: ["languages","russia"]
+metaTitle: "Languages | Russain"
+metaDescription: "Languages | Russain"
+tags: ["languages","russian"]
 ---
 
 Subfolder
