@@ -131,7 +131,7 @@ const SidebarLayout = ({location}) => (
               edges={allMdx.edges}
             />
             <Divider />
-            {config.sidebar.links.map((link, key) => {
+            {/* {config.sidebar.links.map((link, key) => {
               if (link.link !== '' && link.text !== '') {
                 return (
                   <ListItem key={key} to={link.link}>
@@ -140,7 +140,7 @@ const SidebarLayout = ({location}) => (
                   </ListItem>
                 );
               }
-            })}
+            })} */}
           </ul>
         </Sidebar>
       );

@@ -51,7 +51,7 @@ tags: ["history","ibn fadlan"]
 |**930** |Approximate date of birth of Mieszko I, duke of Polons, who reigned from c. 960 until his death in 992. He is the first historically attested ruler of Poland, and is mentioned by Ibrahim ibn Ya'qub. |
 |**935** |Approximate date of birth of Boleslav I, duke of Bohemia. Famous for murdering his brother St Wenceslas, he ruled until his death (in 967 or 972). Ibrahim ibn Ya'qub visited Prague during the last years of his reign. |
 |**942** |Sviatoslav becomes king of Kiev on the death of his father Igor; his mother Olga acts as regent until 963. He is the first Rus of Kiev to bear a Slavic name. |
-|**943** |ikings again raid the Caspian area. |
+|**943** |Vikings again raid the Caspian area. |
 |**944** |The Byzantine emperor Constantine Porphyrogenitus writes De administrando imperii, containing a description of how Viking merchants negotiate the rapids on the Danube. |
 |**945** |Third trade agreement between Rus of Kiev and Byzantines. |
 |**956** |Death of Mas'udI, author of The Meadows of Gold and Mines of Precious Gems. |

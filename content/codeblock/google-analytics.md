@@ -5,7 +5,7 @@ metaDescription: "Google Analytics metaDescription"
 tags: ["google","analytics","dev"]
 ---
 
-The following is a code block with JavaScript language syntax highlighting.
+<!-- The following is a code block with JavaScript language syntax highlighting.
 
 ```javascript
 import React from 'react';
@@ -18,4 +18,4 @@ The following is a code block with diff. Lines with `+` highlighted in green sha
 ```javascript
 - const data = ['1','2'];
 + const data = [1,2];
-```
+``` -->

@@ -5,4 +5,3 @@ metaDescription: "General History"
 tags: ["history"]
 ---
 
-Other

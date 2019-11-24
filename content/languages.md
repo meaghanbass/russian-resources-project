@@ -5,4 +5,3 @@ metaDescription: "This is the meta description"
 tags: ["languages"]
 ---
 
-Lorem

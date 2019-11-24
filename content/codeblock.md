@@ -4,5 +4,3 @@ metaTitle: "Miscellaneous"
 metaDescription: "miscellaneous"
 tags: ["misc"]
 ---
-
-The following is a code block with JavaScript language syntax highlighting.
