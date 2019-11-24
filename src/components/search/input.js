@@ -64,7 +64,7 @@ export default connectSearchBox(({ refine, ...rest }) => {
     e.preventDefault();
   }
   return (
-    <form className="flex bg-white p-4" 
+    <form className="flex bg-white p-4 w-screen" 
       // className={'formElement'} 
       onSubmit={preventSubmit}>
       <SearchIcon />

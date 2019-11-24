@@ -5,39 +5,34 @@ metaDescription: "Arabic | Alphabet"
 tags: ["languages","arabic","alphabet"]
 ---
 
-|Arabic     |English   |
-|-----------|----------|
-
-<!-- |А а        |А а       |
-|Б б        |B b       |
-|В в        |V v       |
-|Г г        |G g       |
-|Д д        |D d       | 
-|Е е        |YE ye     | 
-|Ё ё        |YO yo     | 
-|Ж ж        |Zh zh     | 
-|З з        |Z z       | 
-|И и        |EE ee     | 
-|Й й        |I i or Y y| 
-|К к        |K k       | 
-|Л л        |L l       | 
-|М м        |M m       | 
-|Н н        |N n       | 
-|О о        |Stressed: O o <br></br>Unstressed: A a       | 
-|П п        |P p       | 
-|Р р        |R r       | 
-|С с        |S s       | 
-|Т т        |T t       | 
-|У у        |U u       | 
-|Ф ф        |F f       | 
-|Х х        |H h, KH kh| 
-|Ц ц        |TS ts     | 
-|Ч ч        |CH ch     | 
-|Ш ш        |SH sh (hard)| 
-|Щ щ        |SH sh (soft)| 
-|Ъ ъ        |Hard Sign | 
-|Ы ы        |I i       | 
-|Ь ь        |Soft Sign | 
-|Э э        |E e       | 
-|Ю ю        |YU yu     | 
-|Я я        |YA ya     |  -->
+|Letter|End|Middle|Beginning|Sound &nbsp;&nbsp;&nbsp;|Example|
+|-----|-----|-----|-----|-----|-----|
+|ا‎	|ـا‎	|ـا‎	|ا‎	    |ʾ / ā	|'a' as in 'father'
+|ب‎	|ـب‎	|ـبـ‎	|بـ‎	|b	|'b' as in 'bed'
+|ت‎	|ـت‎	|ـتـ‎	|تـ‎	|t	|'t' as in 'tent'
+|ث‎	|ـث‎	|ـثـ‎	|ثـ‎	|ṯ	|'th' as in 'think'
+|ج‎	|ـج‎	|ـجـ‎	|جـ‎	|j	|'j' as in 'jam'
+|ح‎	|ـح‎	|ـحـ‎	|حـ‎	|ḥ	|Sharp 'h'
+|خ‎	|ـخ‎	|ـخـ‎	|خـ‎	|ḫ (kh, x)	|'ch' as in German 'Bach'
+|د‎	|ـد‎	|ـد‎	|د‎	    |d	|'d' as in 'deer'
+|ذ‎	|ـذ‎	|ـذ‎	|ذ‎	    |ḏ (dh, ð)	|'th' as in 'there'
+|ر‎	|ـر‎	|ـر‎	|ر‎	    |r	|'r' as in 'run'
+|ز‎	|ـز‎	|ـز‎	|ز‎	    |z	|'z' as in 'zoo'
+|س‎	|ـس‎	|ـسـ‎	|سـ‎	|s	|'s' as in 'sit'
+|ش‎	|ـش‎	|ـشـ‎	|شـ‎	|š (sh)	|'sh' as in 'shut'
+|ص‎	|ـص‎	|ـصـ‎	|صـ‎	|ṣ	|'s' as in 'sold'
+|ض‎	|ـض‎	|ـضـ‎	|ضـ‎	|ḍ	|'d' as in 'bulldozer'
+|ط‎	|ـط‎	|ـطـ‎	|طـ‎	|ṭ	|'t' as in 'Tazmania'
+|ظ‎	|ـظ‎	|ـظـ‎	|ظـ‎	|ẓ	|'th' as in 'those'
+|ع‎	|ـع‎	|ـعـ‎	|عـ‎	|ʿ	|'a' in 'agh' when suprised
+|غ‎	|ـغ‎	|ـغـ‎	|غـ‎	|ġ (gh)	|'r' as in 'Paris'
+|ف‎	|ـف‎	|ـفـ‎	|فـ‎	|f	|'f' as in 'free'
+|ق‎	|ـق‎	|ـقـ‎	|قـ‎	|q	|'q' as in 'Qum'
+|ك‎	|ـك‎	|ـكـ‎	|كـ‎	|k	|'k' as in 'king'
+|ل‎	|ـل‎	|ـلـ‎	|لـ‎	|l	|'l' as in 'lift'
+|م‎	|ـم‎	|ـمـ‎	|مـ‎	|m	|'m' as in 'moon'
+|ن‎	|ـن‎	|ـنـ‎	|نـ‎	|n	|'n' as in 'net'
+|ه‎	|ـه‎	|ـهـ‎	|هـ‎	|h	|'h' as in 'house'
+|و‎	|ـو‎	|ـو‎	|و‎	    |w	|'w' as in 'wonder'
+|ي‎	|ـي‎	|ـيـ‎	|يـ‎	|y	|'y' as in 'yellow'
+|ء|	 |	|  |  |'o' as in 'oh'

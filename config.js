@@ -28,7 +28,7 @@ const config = {
     		"/codeblock"
 		],
 		"links": [
-			{ "text": "Hasura", "link": "https://meaghanbass.io"},
+			{ "text": "meaghanbass.io", "link": "https://meaghanbass.io"},
 		],
 		"frontline": false,
 		"ignoreIndex": true,

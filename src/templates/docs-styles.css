@@ -25,14 +25,17 @@
 
 .markdown-body h1 {
     font-size: 3rem;
+    margin: 1rem 0;
 }
 
 .markdown-body h2 {
     font-size: 2.25rem;
+    margin: 1rem 0;
 }
 
 .markdown-body h3 {
     font-size: 1.875rem;
+    margin: 1rem 0;
 }
 
 .markdown-body h4 {
@@ -45,10 +48,12 @@
 
 .markdown-body h5 {
     font-size: 1.25rem;
+    margin: 1rem 0;
 }
 
 .markdown-body h6 {
     font-size: 1.125rem;
+    margin: 1rem 0;
 }
 
 .markdown-body ol {
@@ -181,4 +186,19 @@ table tr td var {
 
 em:hover {
     font-style: normal;
+}
+
+.markdown-body .rtl ol {
+    text-align: right;
+}
+
+.markdown-body .rtl ol li::before {
+    float: left;
+}
+
+audio {
+    background: white;
+    width: 50px;
+    clip-path: circle(20px at center);
+    margin: auto;
 }

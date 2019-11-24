@@ -280,6 +280,7 @@ h6 {
 .mainWrapper {
   color: rgb(59, 69, 78);
   max-width: 750px;
+  margin: auto;
 }
 .navBarUL li a:hover {
   opacity: .7;
@@ -710,6 +711,9 @@ img {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  #navbar {
+    width: 100%;
+  }
   .navBarULRight {
     position: static;
   }
@@ -753,6 +757,7 @@ img {
   .titleWrapper {
     padding: 0 15px;
     display: block;
+    padding-bottom: 20px;
   }
 
   .mobileView {
