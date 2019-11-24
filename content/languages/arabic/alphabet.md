@@ -5,6 +5,8 @@ metaDescription: "Arabic | Alphabet"
 tags: ["languages","arabic","alphabet"]
 ---
 
+<div class="arabic-alphabet">
+
 |Letter|End|Middle|Beginning|Sound &nbsp;&nbsp;&nbsp;|Example|
 |-----|-----|-----|-----|-----|-----|
 |ا‎	|ـا‎	|ـا‎	|ا‎	    |ʾ / ā	|'a' as in 'father'
@@ -36,3 +38,5 @@ tags: ["languages","arabic","alphabet"]
 |و‎	|ـو‎	|ـو‎	|و‎	    |w	|'w' as in 'wonder'
 |ي‎	|ـي‎	|ـيـ‎	|يـ‎	|y	|'y' as in 'yellow'
 |ء|	 |	|  |  |'o' as in 'oh'
+
+</div>
