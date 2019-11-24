@@ -8,20 +8,21 @@ tags: ["languages","arabic","phrases"]
 ### Basic Phrases  
 
 |Arabic     |Latin      |English   |
-|-----------|-----------|----------|
-|           |           |Welcome   |
-|السلام عليكم|as-salām 'alaykum|Hello     |
+|----------:|-----------|----------|
+|مرحبا      |marhaban   |Welcome   |
+|السلام عليكم|as-salam 'alaykum|Hello (Peace be unto you)     |
+|وَعَلَيْكُمُ السَّلَام|wa'alaikum salaam|And unto you peace|
 |سلام        |salam      |Hi        |
-|           |           |How are you?|
-|           |           |What is your name?|
-|           |           |My name is|
-|           |           |Good morning|
-|           |           |Good afternoon|
+|كيف حالك؟  |kaifa haloka/ haloki ( female)|How are you?|
+|ما إسمك؟   |ma esmouk? Ma esmouki?|What is your name?|
+|إسمي       |esmee…     |My name is|
+|صباح الخير |sabah el kheer|Good morning|
+|مساء الخير |masaa el kheer|Good afternoon|
 |           |           |Good evening|
-|           |           |Goodbye   |
+|مع السلامة  |ma’a salama|Goodbye   |
 |           |           |I understand|
-|           |           |I don't understand|
+|لا أفهم     |la afham   |I don't understand|
 |           |           |Yes, a little|
-|           |           |Sorry     |
+|أسف        |aasef      |Sorry     |
 |           |           |Please    |
-|           |           |Thank you |
+|شكرا       |shokran    |Thank you |
