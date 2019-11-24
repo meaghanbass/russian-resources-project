@@ -714,6 +714,9 @@ img {
   #navbar {
     width: 100%;
   }
+  .searchbar {
+    width: 100vw;
+  }
   .navBarULRight {
     position: static;
   }
