@@ -716,6 +716,7 @@ img {
   }
   .searchbar {
     width: 100vw;
+    max-height: 55px;
   }
   .navBarULRight {
     position: static;
