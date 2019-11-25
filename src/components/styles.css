@@ -70,6 +70,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .formElement {
   background-color: transparent;
   padding: 4px;
@@ -103,7 +104,7 @@ body {
   border: 1px solid #ccc;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
   max-height: 80vh;
-  width: max-content;
+  /* width: max-content; */
 }
 .showResults {
   display: block;
@@ -114,7 +115,7 @@ body {
 .ais-Hits-item {
   padding: 5px;
   padding-left: 15px;
-  height: 1rem;
+  /* height: 1rem; */
 }
 .ais-Hits-item:hover {
   background-color: #f7fafc;
@@ -180,7 +181,7 @@ body {
   font-weight: 500;
   line-height: 1em;
   opacity: 1;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .navBarNav {
   display: flex;
@@ -542,6 +543,12 @@ img {
 }
 
 @media (max-width: 767px) {
+  #docsearch {
+    width: calc(100vw - 36px);
+  }
+  .result-slug {
+    display: none;
+  }
   hr {
     margin-top: 0;
     margin-bottom: 0;
@@ -577,7 +584,7 @@ img {
   .navBarUL li a {
     font-size: 14px;
     /* padding: 10px 10px; */
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 
   .navBarDefault {
@@ -667,11 +674,11 @@ img {
     height: 20px;
   }
   .hitWrapper {
-    max-width: 500px;
+    /* max-width: 500px; */
   }
   .navBarUL li a {
     /* padding: 10px 5px; */
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .searchWrapper {
     padding-left: 0px;

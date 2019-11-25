@@ -66,12 +66,12 @@ export default connectSearchBox(({ refine, ...rest }) => {
     e.preventDefault();
   }
   return (
-    <form id="docsearch" className="flex bg-white p-4 rounded-lg w-screen lg:w-full" 
+    <form id="docsearch" className="flex bg-white p-4 rounded-lg lg:w-full" 
       // className={'formElement'} 
       onSubmit={preventSubmit}>
       <SearchIcon />
       <Input
-        className="text-black"
+        className="text-black w-full"
         type="text"
         placeholder="Search"
         aria-label="Search"
