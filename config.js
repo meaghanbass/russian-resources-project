@@ -38,7 +38,7 @@ const config = {
 		"description": "Documentation built with mdx. Powering meaghanbass.io ",
 		"ogImage": null,
 		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
-		"favicon": "https://image.flaticon.com/icons/svg/599/599588.svg"
+		"favicon": "./src/components/images/logo.svg"
 	},
 };
 
