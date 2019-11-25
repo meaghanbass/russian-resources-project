@@ -75,7 +75,7 @@ const Header = ({location}) => (
               </button>
             </div>
             {isSearchEnabled ? (
-              <div className={'searchWrapper hidden-xs navBarUL p-0 relative m-auto w-6/12'}>
+              <div className={'searchWrapper hidden-xs navBarUL p-0 relative m-auto w-full lg:w-6/12'}>
                 <Search collapse indices={searchIndices} />
               </div>
               ): null}
@@ -84,7 +84,7 @@ const Header = ({location}) => (
                 <Sidebar location={location} />
                 <hr/>
                 {isSearchEnabled ? (
-                  <div className={'searchWrapper navBarUL p-0 relative m-auto w-6/12'}>
+                  <div className={'searchWrapper navBarUL p-0 relative m-auto w-full lg:w-6/12'}>
                     <Search collapse indices={searchIndices} />
                   </div>
                   ): null}
