@@ -8,21 +8,21 @@ import config from '../../config';
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
 const Sidebar = styled('aside')`
-  width: 100%;
+  // width: 100%;
   // background-color: #fff;
-  background-color: #F5F7FB;
+  // background-color: #F5F7FB;
   border-right: 1px solid #ede7f3;
-  height: 100vh;
-  overflow: auto;
-  position: fixed;
+  // height: 100vh;
+  // overflow: auto;
+  // position: fixed;
   padding-left: 24px;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: sticky;
-  top: 0;
+  // position: -webkit-sticky;
+  // position: -moz-sticky;
+  // position: sticky;
+  // top: 0;
   @media only screen and (max-width: 50rem) {
-    width: 100%;
-    position: relative;
+    // width: 100%;
+    // position: relative;
   }
 `;
 
@@ -34,7 +34,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
       </li>
     );
 })`
-  list-style: none;
+  // list-style: none;
 
   a {
     color: #5C6975;
@@ -92,7 +92,7 @@ const SidebarLayout = ({ location }) => (
                 innerItems = item.node.tableOfContents.items.map((innerItem, index) => {
                   const itemId = innerItem.title ? innerItem.title.replace(/\s+/g, '').toLowerCase() : '#';
                   return (
-                    <ListItem
+                    <ListItem className="list-none"
                       key={index}
                       to={`#${itemId}`}
                       level={1}
@@ -112,9 +112,9 @@ const SidebarLayout = ({ location }) => (
 
       if (finalNavItems && finalNavItems.length) {
         return (
-          <Sidebar>
-            <ul className={'rightSideBarUL'}>
-              <div className={'rightSideTitle'}>CONTENTS</div>
+          <Sidebar className="w-full h-screen overflow-auto fixed sticky top-0">
+            <ul className={'rightSideBarUL mt-8'}>
+              <div className={'rightSideTitle leading-none font-bold uppercase'}>CONTENTS</div>
               {finalNavItems}
             </ul>
           </Sidebar>

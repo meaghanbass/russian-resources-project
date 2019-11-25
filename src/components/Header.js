@@ -62,9 +62,9 @@ const Header = ({location}) => (
       const finalLogoLink = logo.link !== '' ? logo.link : '/';
       return (
         <div className={'navBarWrapper'}>
-          <nav className={'navbar navbar-default navBarDefault'}>
-            <div className={'navbar-header navBarHeader'}>
-              <Link to="/" className={'navbar-brand navBarBrand'}>
+          <nav className={'navbar navbar-default navBarDefault bg-gray-100 rounded-none border-0 flex items-center mb-0 border-t-0 p-4'}>
+            <div className={'navbar-header navBarHeader w-full md:w-1/3 xl:w-1/6'}>
+              <Link to="/" className={'navbar-brand navBarBrand h-auto font-medium p-0 flex items-center leading-normal'}>
                 <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
               <button type="button" className={'navbar-toggle collapsed navBarToggle'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -75,16 +75,16 @@ const Header = ({location}) => (
               </button>
             </div>
             {isSearchEnabled ? (
-              <div className={'searchWrapper hidden-xs navBarUL'}>
+              <div className={'searchWrapper hidden-xs navBarUL p-0 relative m-auto w-6/12'}>
                 <Search collapse indices={searchIndices} />
               </div>
               ): null}
-            <div id="navbar" className={'navbar-collapse collapse navBarCollapse'}>
+            <div id="navbar" className={'collapse navBarCollapse overflow-hidden sm:hidden lg:block lg:w-1/6'}>
               <div className={'visible-xs'}>
                 <Sidebar location={location} />
                 <hr/>
                 {isSearchEnabled ? (
-                  <div className={'searchWrapper navBarUL'}>
+                  <div className={'searchWrapper navBarUL p-0 relative m-auto w-6/12'}>
                     <Search collapse indices={searchIndices} />
                   </div>
                   ): null}
@@ -122,21 +122,3 @@ const Header = ({location}) => (
 );
 
 export default Header;
-
-
-
-
-// import React from "react"
-// import Search from "./search"
-
-// const searchIndices = [
-//   { name: `Pages`, title: `Pages`, hitComp: `PageHit` }
-// ]
-
-// const Header = ({ site, transparent }) => (
-//   <React.Fragment>
-//     <Search className="bg-red-100" collapse indices={searchIndices} />
-//   </React.Fragment>
-// )
-
-// export default Header

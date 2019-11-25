@@ -7,9 +7,9 @@ import Sidebar from "./sidebar";
 import RightSidebar from "./rightSidebar";
 
 const Wrapper = styled('div')`
-  display: flex;
-  justify-content: space-between;
-  background-color: #F5F7FB;
+  // display: flex;
+  // justify-content: space-between;
+  // background-color: #F5F7FB;
 
   @media only screen and (max-width: 767px) {
     display: block;
@@ -17,13 +17,13 @@ const Wrapper = styled('div')`
 `;
 
 const Content = styled('main')`
-  display: flex;
-  flex-grow: 1;
+  // display: flex;
+  // flex-grow: 1;
   margin: 0px 88px;
   margin-top: 3rem;
   margin-bottom: 3rem;
   // background-color: #1F1F1F;
-  background-color: white;
+  // background-color: white;
   height: max-content;
 
   @media only screen and (max-width: 1023px) {
@@ -35,29 +35,28 @@ const Content = styled('main')`
 `;
 
 const MaxWidth = styled('div')`
-
   // @media only screen and (max-width: 50rem) {
   //   width: 100%;
   //   position: relative;
   // }
 `;
 const LeftSideBarWidth = styled('div')`
-  width: 298px;
+  // width: 298px;
 `;
 const RightSideBarWidth = styled('div')`
-  width: 224px;
+  // width: 298px;
 `;
 const Layout = ({ children, location }) => (
   <ThemeProvider location={location}>
     <MDXProvider components={mdxComponents}>
-      <Wrapper>
-        <LeftSideBarWidth className={'hidden-xs'}>
+      <Wrapper className="flex justify-between bg-gray-100">
+        <LeftSideBarWidth className={'hidden-xs sm:w-1/3 lg:w-1/6'}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
-        <Content className="p-8 rounded-lg max-h-full">
+        <Content className="flex flex-grow p-8 rounded-lg max-h-full bg-white">
           <MaxWidth className="w-full">{children}</MaxWidth>
         </Content>
-        <RightSideBarWidth className={'hidden-xs'}>
+        <RightSideBarWidth className={'hidden-xs hidden-sm hidden-md w-1/6'}>
           <RightSidebar location={location} />
         </RightSideBarWidth>
       </Wrapper>

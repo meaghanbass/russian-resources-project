@@ -39,25 +39,25 @@ class NextPrevious extends React.Component {
       }
     }
     return (
-      <div className={'nextPreviousWrapper'}>
+      <div className={'nextPreviousWrapper m-0 p-0 w-auto'}>
         {previousInfo.url && currentIndex >= 0 ? 
-          (<Link to={nav[currentIndex-1].url} className={'previousBtn'}>
-            <div className={'leftArrow'}>
+          (<Link to={nav[currentIndex-1].url} className={'previousBtn cursor-pointer m-0 p-0 relative flex flex-row items-center bg-white no-underline hover:no-underline'}>
+            <div className={'leftArrow block m-0 p-4'}>
               <svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor" className="_13gjrqj"><g><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></g></svg>
             </div>
-            <div className={'preRightWrapper'}>
-              <div className={'smallContent'}>
+            <div className={'preRightWrapper block m-0 p-4 text-right flex-1'}>
+              <div className={'smallContent block m-0 p-0'}>
                 <span>Previous</span>
               </div>
-              <div className={'nextPreviousTitle'}>
+              <div className={'nextPreviousTitle block m-0 p-0'}>
                 <span>{nav[currentIndex-1].title}</span>
               </div>
             </div>
           </Link>) : null
         }
         {nextInfo.url && currentIndex >= 0 ?
-          (<Link to={nav[currentIndex+1].url} className={'nextBtn'}>
-            <div className={'nextRightWrapper'}>
+          (<Link to={nav[currentIndex+1].url} className={'nextBtn cursor-pointer m-0 p-0 relative flex flex-row items-center bg-white no-underline hover:no-underline'}>
+            <div className={'nextRightWrapper block m-0 p-4 flex-1'}>
               <div className={'smallContent'}>
                 <span>Next</span>
               </div>
@@ -65,7 +65,7 @@ class NextPrevious extends React.Component {
                 <span>{nav[currentIndex+1] && nav[currentIndex+1].title}</span>
               </div>
             </div>
-            <div className={'rightArrow'}>
+            <div className={'rightArrow p-4 block m-0'}>
               <svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor" className="_13gjrqj"><g><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></g></svg>
             </div>
           </Link>) : null

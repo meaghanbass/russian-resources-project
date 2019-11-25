@@ -23,7 +23,7 @@ const SearchIcon = styled(Search)`
 `
 
 const HitsWrapper = styled.div`
-  width: 500px;
+  // width: 500px;
 `
 
 const Root = styled.div`
@@ -82,7 +82,7 @@ export default function SearchComponent({ indices, collapse, hitsAsGrid }) {
       root={{ Root, props: { ref } }}
     >
       <Input onFocus={() => setFocus(true)} {...{ collapse, focus }} />
-      <HitsWrapper className={'hitWrapper ' + displayResult} show={query.length > 0 && focus} asGrid={hitsAsGrid}>
+      <HitsWrapper className={'hitWrapper bg-white absolute h-auto overflow-scroll left-0 ' + displayResult} show={query.length > 0 && focus} asGrid={hitsAsGrid}>
         {indices.map(({ name, title, hitComp }) => {
           return (
             <Index key={name} indexName='pages'>

@@ -47,19 +47,19 @@ const ListItem = styled(({ className, active, level, ...props }) => {
 `;
 
 const Sidebar = styled('aside')`
-  width: 100%;
-  /* background-color: rgb(245, 247, 249); */
-  /* border-right: 1px solid #ede7f3; */
-  height: 100vh;
-  overflow: auto;
-  position: fixed;
-  padding-left: 0px;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: sticky;
-  top: 0;
-  padding-right: 0;
-  background-color: #F5F7FB;
+  // width: 100%;
+  // background-color: rgb(245, 247, 249);
+  // border-right: 1px solid #ede7f3;
+  // height: 100vh;
+  // overflow: auto;
+  // position: fixed;
+  // padding-left: 0px;
+  // position: -webkit-sticky;
+  // position: -moz-sticky;
+  // position: sticky;
+  // top: 0;
+  // padding-right: 0;
+  // background-color: #F5F7FB;
   /* Safari 4-5, Chrome 1-9 */
   // background: linear-gradient(#372476, #3b173b);
   // background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#372476), to(#3b173b));
@@ -73,17 +73,17 @@ const Sidebar = styled('aside')`
   // background: -o-linear-gradient(top, #372476, #3b173b);
   @media (min-width: 767px) and (max-width:1023px)
   {
-    padding-left: 0;
+    // padding-left: 0;
   }
   @media only screen and (max-width: 1023px) {
-    width: 100%;
+    // width: 100%;
     /* position: relative; */
-    height: 100vh;
+    // height: 100vh;
   }
   @media only screen and (max-width: 767px) {
-    padding-left: 0px;
-    background-color: #F5F7FB;
-    background: #F5F7FB;
+    // padding-left: 0px;
+    // background-color: #F5F7FB;
+    // background: #F5F7FB;
     // height: 100%;
     height: 40vh;
   }
@@ -125,8 +125,8 @@ const SidebarLayout = ({location}) => (
     `}
     render={({allMdx}) => {
       return (
-        <Sidebar>
-          <ul className={'sideBarUL'}>
+        <Sidebar className="w-full h-screen overflow-auto sticky pl-0 pr-0 top-0">
+          <ul className={'sideBarUL mt-8'}>
             <Tree
               edges={allMdx.edges}
             />
