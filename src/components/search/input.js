@@ -3,6 +3,7 @@ import { connectSearchBox } from "react-instantsearch-dom"
 
 import styled, { css } from "styled-components";
 import { Search } from "styled-icons/fa-solid/Search";
+import '../../components/styles.css'
 
 const SearchIcon = styled(Search)`
   width: 1em;
@@ -10,16 +11,16 @@ const SearchIcon = styled(Search)`
   margin-right: 10px;
   height: 100%;
 `
-const focus = css`
-  background: white;
-  color: ${props => props.theme.darkBlue};
-  cursor: text;
-  width: 5em;
-  + ${SearchIcon} {
-    color: ${props => props.theme.darkBlue};
-    margin: 0.3em;
-  }
-`
+// const focus = css`
+//   background: pink;
+//   color: ${props => props.theme.darkBlue};
+//   cursor: text;
+//   width: 5em;
+//   + ${SearchIcon} {
+//     color: ${props => props.theme.darkBlue};
+//     margin: 0.3em;
+//   }
+// `
 const collapse = css`
   width: 0;
   cursor: pointer;
@@ -65,7 +66,7 @@ export default connectSearchBox(({ refine, ...rest }) => {
     e.preventDefault();
   }
   return (
-    <form className="searchbar flex bg-white p-4" 
+    <form id="docsearch" className="flex bg-white p-4 rounded-lg" 
       // className={'formElement'} 
       onSubmit={preventSubmit}>
       <SearchIcon />
