@@ -9,3 +9,7 @@ tags: ["dev","ruby","rails"]
 
 * 
   * http://installrails.com/
+
+
+# Commands
+
