@@ -80,7 +80,7 @@ const Header = ({location}) => (
               </div>
               ): null}
             <div id="navbar" className={'collapse navBarCollapse overflow-hidden sm:hidden lg:block lg:w-1/6'}>
-              <div className={'flex flex-col'}>
+              <div className={'flex flex-col md:hidden'}>
                 <Sidebar location={location} />
                 <hr/>
                 {isSearchEnabled ? (
