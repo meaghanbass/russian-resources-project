@@ -80,11 +80,11 @@ const Header = ({location}) => (
               </div>
               ): null}
             <div id="navbar" className={'collapse navBarCollapse overflow-hidden sm:hidden lg:block lg:w-1/6'}>
-              <div className={'visible-xs'}>
+              <div className={'flex flex-col'}>
                 <Sidebar location={location} />
                 <hr/>
                 {isSearchEnabled ? (
-                  <div className={'searchWrapper navBarUL p-0 relative m-auto w-full lg:w-6/12'}>
+                  <div className={'searchWrapper navBarUL p-0 relative m-auto w-full lg:w-6/12 order-first md:order-none'}>
                     <Search collapse indices={searchIndices} />
                   </div>
                   ): null}
