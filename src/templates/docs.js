@@ -139,7 +139,7 @@ export default class MDXRuntimeTest extends Component {
         </Helmet>
         <div className="markdown-body">
           <div className={'titleWrapper'}>
-            <h1 className={'title'}>
+            <h1 className={'title theme-border-left-color'}>
               {mdx.fields.title}
             </h1>
           </div>

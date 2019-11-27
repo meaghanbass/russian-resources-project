@@ -94,7 +94,7 @@ const SidebarLayout = ({location}) => (
     `}
     render={({allMdx}) => {
       return (
-        <Sidebar className="w-full h-screen overflow-auto sticky pl-0 pr-0 top-0">
+        <Sidebar className="w-full h-screen overflow-auto sticky pl-0 pr-0 top-0 theme-text-color">
           <ul className={'sideBarUL mt-8'}>
             <Tree
               edges={allMdx.edges}
