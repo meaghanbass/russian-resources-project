@@ -62,10 +62,10 @@ const Header = ({location}) => (
       const finalLogoLink = logo.link !== '' ? logo.link : '/';
       return (
         <div className={'navBarWrapper'}>
-          <nav className={'navbar navbar-default navBarDefault bg-gray-100 rounded-none border-0 flex items-center mb-0 border-t-0 p-4'}>
+          <nav className={'navbar navBarDefault rounded-none border-0 flex items-center mb-0 border-t-0 p-4'}>
             <div className={'navbar-header navBarHeader w-full md:w-1/3 xl:w-1/6'}>
               <Link to="/" className={'navbar-brand navBarBrand h-auto font-medium p-0 flex items-center leading-normal'}>
-                <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
+                <div className={"headerTitle text-gray-800"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
               <button type="button" className={'navbar-toggle collapsed navBarToggle'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span className={'sr-only'}>Toggle navigation</span>

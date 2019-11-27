@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import config from "../config";
+import '../src/components/styles.css';
 
 export default class HTML extends React.Component {
   render() {
@@ -33,7 +34,7 @@ export default class HTML extends React.Component {
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossOrigin="anonymous"></script>
           {this.props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes}>
+        <body {...this.props.bodyAttributes} className="">
           {this.props.preBodyComponents}
           <div
             key={`body`}

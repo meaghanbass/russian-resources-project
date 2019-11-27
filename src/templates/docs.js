@@ -40,7 +40,7 @@ injectGlobal`
 
   a {
     transition: color 0.15s;
-    color: #663399;
+    // color: #663399;
   }
 `;
 

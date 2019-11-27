@@ -5,9 +5,22 @@
 
 body {
   font-family: 'Roboto';
-  background-color:#f7fafc;
+  /* background-color:#f7fafc; */
+  @apply bg-gray-300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.shadow {
+  box-shadow: 0 6px 8px rgba(102,119,136,.03),0 1px 2px rgba(102,119,136,.3);
+}
+
+.theme-color {
+  color: red !important;
+  border-color: red;
+}
+.theme-color:hover {
+  color: white !important;
 }
 
 .video-responsive {
@@ -165,7 +178,7 @@ body {
 }
 .navBarBrand {
   font-size: 28px;
-  color: #344abd !important;
+  /* color: #344abd !important; */
 }
 
 .navBarBrand img {
@@ -246,7 +259,7 @@ pre {
 }
 
 .sideBarUL li a {
-  color: #76787C;
+  /* color: #76787C; */
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
@@ -280,16 +293,18 @@ pre {
   position: absolute;
   right: 20px;
   z-index: 1;
+  height: 21px;
 }
 
 .hideFrontLine .active > a{
   color: #344abd !important;
+  font-weight: bold;
 }
 .firstLevel ul li .collapser svg path {
   fill: #76787C !important;
 }
 .active .collapser >svg >path {
-  fill: #663399 !important;
+  /* fill: #663399 !important; */
 }
 
 .firstLevel ul .item ul .item {
@@ -301,7 +316,7 @@ pre {
   padding: 0;
 }
 .sideBarUL .item >a {
-  color: #76787C;
+  /* color: #76787C; */
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -311,6 +326,7 @@ pre {
 }
 .sideBarUL .item>a:hover {
   color: #344abd !important;
+  font-weight: bold;
 }
 .showFrontLine .item >a:hover {
   background-color: #542683;
