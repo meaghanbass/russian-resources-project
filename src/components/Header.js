@@ -67,11 +67,11 @@ const Header = ({location}) => (
               <Link to="/" className={'navbar-brand navBarBrand h-auto font-medium p-0 flex items-center leading-normal'}>
                 <div className={"headerTitle text-gray-800"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
-              <button type="button" className={'navbar-toggle collapsed navBarToggle'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <button type="button" className={'navbar-toggle collapsed navBarToggle border-gray-800'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span className={'sr-only'}>Toggle navigation</span>
-                <span className={'icon-bar'}></span>
-                <span className={'icon-bar'}></span>
-                <span className={'icon-bar'}></span>
+                <span className={'icon-bar bg-gray-800'}></span>
+                <span className={'icon-bar bg-gray-800'}></span>
+                <span className={'icon-bar bg-gray-800'}></span>
               </button>
             </div>
             {isSearchEnabled ? (

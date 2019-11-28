@@ -20,7 +20,8 @@ const Content = styled('main')`
 
   @media only screen and (max-width: 1023px) {
     margin: 0 10px;
-    margin-top: 3rem;
+    // margin-top: 3rem;
+    margin-top: 0;
     margin-bottom: 3rem;
   }
 `;
@@ -41,7 +42,7 @@ const Layout = ({ children, location }) => (
         <LeftSideBarWidth className={'hidden-xs sm:w-1/3 lg:w-1/6'}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
-        <Content className="shadow flex flex-grow p-8 rounded-lg max-h-full bg-white">
+        <Content className="shadow flex flex-grow p-3 md:p-8 rounded-lg max-h-full bg-white">
           <MaxWidth className="w-full">{children}</MaxWidth>
         </Content>
         <RightSideBarWidth className={'hidden-xs hidden-sm hidden-md w-1/6'}>
