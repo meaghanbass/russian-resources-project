@@ -37,7 +37,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
   // list-style: none;
 
   a {
-    color: #5C6975;
+    // color: #5C6975;
     text-decoration: none;
     font-weight: ${({ level }) => (level === 0 ? 700 : 400)};
     padding: 0.45rem 0 0.45rem ${props => 2 + (props.level || 0) * 1}rem;
@@ -45,7 +45,8 @@ const ListItem = styled(({ className, active, level, ...props }) => {
     position: relative;
 
     &:hover {
-      color: rgb(116, 76, 188) !important;
+      // color: rgb(116, 76, 188) !important;
+      var(--theme-accent);
     }
 
     ${props =>
@@ -92,7 +93,7 @@ const SidebarLayout = ({ location }) => (
                 innerItems = item.node.tableOfContents.items.map((innerItem, index) => {
                   const itemId = innerItem.title ? innerItem.title.replace(/\s+/g, '').toLowerCase() : '#';
                   return (
-                    <ListItem className="list-none"
+                    <ListItem className="list-none theme-text-color hover:"
                       key={index}
                       to={`#${itemId}`}
                       level={1}
