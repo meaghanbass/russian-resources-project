@@ -2,7 +2,7 @@
 title: "Al-Fatiha الْفَاتِحَة‎"
 metaTitle: "Middle East History | Al-Fatiha"
 metaDescription: "Middle East History | Al-Fatiha"
-tags: ["history","middle east","al fatiha"]
+tags: ["history","middle east","al fatiha","private"]
 ---
 
 <audio controls>
