@@ -7,7 +7,7 @@ const config = {
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
 		"logoLink": "https://meaghanbass.io",
-		"title": "Gitbook",
+		"title": "Русские Ресурсы",
 		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
 		"helpUrl": "",
 		"tweetText": "",
@@ -34,11 +34,11 @@ const config = {
 		"ignoreIndex": true,
 	},
 	"siteMetadata": {
-		"title": "Gitbook | MB",
-		"description": "Documentation built with mdx. Powering meaghanbass.io ",
+		"title": "Русские Ресурсы",
+		"description": "Documentation built with mdx.",
 		"ogImage": null,
 		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
-		"favicon": "https://assetsglobal.s3-us-west-1.amazonaws.com/logo.png"
+		"favicon": "http://government.ru/static/img/favicon.ico"
 	},
 };
 

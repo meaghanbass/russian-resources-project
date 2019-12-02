@@ -24,7 +24,7 @@ const TreeNode = ({className = '', setCollapsed, collapsed, url, title, items, .
       {!config.sidebar.frontLine && title && hasChildren ? (
         <button
           onClick={collapse}
-          className='collapser'>
+          className='collapser hidden'>
           {!isCollapsed ? <OpenedSvg /> : <ClosedSvg />}
         </button>
       ) : null}

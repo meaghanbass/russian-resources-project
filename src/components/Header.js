@@ -61,11 +61,11 @@ const Header = ({location}) => (
       } = data;
       const finalLogoLink = logo.link !== '' ? logo.link : '/';
       return (
-        <div className={'navBarWrapper'}>
-          <nav className={'navbar navBarDefault rounded-none border-0 flex items-center mb-0 border-t-0 p-4'}>
-            <div className={'navbar-header navBarHeader w-full md:w-1/3 xl:w-1/6'}>
+        <div className={'navBarWrapper flex w-screen z-10'}>
+          <nav className={'navbar navBarDefault m-auto rounded-none border-0 flex items-center border-t-0 flex'}>
+            <div className={'navbar-header navBarHeader w-auto flex'}>
               <Link to="/" className={'navbar-brand navBarBrand h-auto font-medium p-0 flex items-center leading-normal'}>
-                <div className={"headerTitle text-gray-800"} dangerouslySetInnerHTML={{__html: headerTitle}} />
+                <div className={"headerTitle text-white"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
               <button type="button" className={'navbar-toggle collapsed navBarToggle border-gray-800'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span className={'sr-only'}>Toggle navigation</span>
@@ -75,11 +75,11 @@ const Header = ({location}) => (
               </button>
             </div>
             {isSearchEnabled ? (
-              <div className={'searchWrapper hidden-xs navBarUL p-0 relative m-auto w-full lg:w-6/12'}>
+              <div className={'searchWrapper hidden-xs navBarUL p-0 relative w-auto flex'}>
                 <Search collapse indices={searchIndices} />
               </div>
               ): null}
-            <div id="navbar" className={'collapse navBarCollapse overflow-hidden sm:hidden lg:block lg:w-1/6'}>
+            <div id="navbar" className={'collapse navBarCollapse overflow-hidden sm:hidden lg:block md:w-0 flex'}>
               <div className={'flex flex-col md:hidden'}>
                 <Sidebar location={location} />
                 <hr/>
@@ -103,7 +103,7 @@ const Header = ({location}) => (
                   (<li><a href={helpUrl}><img src={help} alt={'Help icon'}/></a></li>) : null
                 }
                 {(tweetText !== '' || githubUrl !== '') ?
-                  (<li className="divider hidden-xs"></li>): null
+                  (<li className=" hidden-xs"></li>): null
                 }
                 {tweetText !== '' ?
                   (<li>

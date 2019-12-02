@@ -137,11 +137,11 @@ export default class MDXRuntimeTest extends Component {
           {metaDescription ? <meta property="twitter:description" content={metaDescription} /> : null}
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
-        <div className="markdown-body">
+        <div className="markdown-body p-8">
           <div className={'titleWrapper'}>
-            <h1 className={'title theme-border-left-color'}>
+            <h3 className={'title theme-border-left-color'}>
               {mdx.fields.title}
-            </h1>
+            </h3>
           </div>
           <div className={'mainWrapper'}>
             <MDXRenderer>{mdx.body}</MDXRenderer>

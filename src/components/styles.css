@@ -4,13 +4,13 @@
 @tailwind utilities;
 
 :root {
-  --theme-accent: #6F5CB5 !important;
+  --theme-accent: #8C1515 !important;
 }
 
 body {
-  font-family: 'Roboto';
-  background-color: #F8FAFB;
-  /* @apply bg-gray-300; */
+  font-family: 'Source sans pro' !important;
+  /* background-color: #F8FAFB; */
+  background-color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,7 +30,7 @@ body {
 
 .theme-text-accent-color {
   color: var(--theme-accent);
-  /* border-color: #6F5CB5; */
+  /* border-color: #8C1515; */
 }
 .theme-text-accent-color:hover {
   color: white !important;
@@ -38,6 +38,10 @@ body {
 
 .theme-border-left-color {
   border-left-color: var(--theme-accent) !important;
+}
+
+.theme-accent-bg {
+  background-color: #f2f1eb;
 }
 /* END THEME COLORS */
 
@@ -80,6 +84,19 @@ body {
 .githubSection:hover {
   text-decoration: none;
   opacity: 1;
+}
+
+footer {
+  background-color: #8C1515;
+}
+
+.navBarWrapper {
+  background: #8C1515;
+  height: 60px;
+}
+
+.input-bg:focus {
+  background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -193,6 +210,8 @@ body {
 /* Header section starts here */
 .navBarDefault {
   z-index: 1;
+  width: 100%;
+  max-width: 1218px;
 }
 .navBarBrand {
   font-size: 28px;
@@ -223,7 +242,7 @@ body {
 }
 .mainWrapper {
   color: rgb(59, 69, 78);
-  max-width: 750px;
+  /* max-width: 750px; */
   margin: auto;
 }
 .navBarUL li a:hover {
@@ -315,7 +334,7 @@ pre {
 }
 
 .hideFrontLine .active > a{
-  /* color: #6F5CB5 !important; */
+  /* color: #8C1515 !important; */
   @apply theme-text-accent-color;
   font-weight: bold;
 }
@@ -327,7 +346,7 @@ pre {
 }
 
 .firstLevel ul .item ul .item {
-  border-left: 1px solid #e6ecf1;
+  /* border-left: 1px solid #e6ecf1; */
 }
 
 .sideBarUL .item{

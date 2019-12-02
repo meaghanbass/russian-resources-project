@@ -48,7 +48,7 @@ const Input = styled.input`
   outline: none;
   border: none;
   font-size: 1em;
-  background: white;
+  background: transparent;
   transition: ${props => props.theme.shortTrans};
   border-radius: ${props => props.theme.smallBorderRadius};
   {hightlight-next-line}
@@ -66,12 +66,12 @@ export default connectSearchBox(({ refine, ...rest }) => {
     e.preventDefault();
   }
   return (
-    <form id="docsearch" className="shadow flex bg-white p-4 rounded-lg lg:w-full" 
+    <form id="docsearch" className="flex p-2 rounded-lg lg:w-full" 
       // className={'formElement'} 
       onSubmit={preventSubmit}>
       <SearchIcon />
       <Input
-        className="text-black w-full"
+        className="input-bg text-black w-full"
         type="text"
         placeholder="Search"
         aria-label="Search"

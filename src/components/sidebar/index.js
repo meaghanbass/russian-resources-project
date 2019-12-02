@@ -47,6 +47,8 @@ const ListItem = styled(({ className, active, level, ...props }) => {
 `;
 
 const Sidebar = styled('aside')`
+  background-color: #f2f1eb;
+  margin-top: 47px;
   @media (min-width: 767px) and (max-width:1023px)
   {
     // padding-left: 0;
@@ -94,24 +96,11 @@ const SidebarLayout = ({location}) => (
     `}
     render={({allMdx}) => {
       return (
-        <Sidebar className="w-full h-screen overflow-auto sticky pl-0 pr-0 top-0 theme-text-color">
-          <ul className={'sideBarUL mt-8'}>
+        <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6">
+          <ul className={'sideBarUL'}>
             <Tree
               edges={allMdx.edges}
             />
-            <Divider />
-            {/* <img src="https://api.netlify.com/api/v1/badges/9181d9a1-4290-4d9a-bcfb-8472202b43a2/deploy-status" alt="Netlify Status"></img> */}
-            {config.sidebar.links.map((link, key) => {
-              if (link.link !== '' && link.text !== '') {
-                return (
-                  <img className="p-4 pb-6 m-auto" src="https://api.netlify.com/api/v1/badges/9181d9a1-4290-4d9a-bcfb-8472202b43a2/deploy-status" alt="Netlify Status"></img>
-                  // <ListItem key={key} to={link.link}>
-                  //   {link.text}
-                  //   <ExternalLink size={14} />
-                  // </ListItem>
-                );
-              }
-            })}
           </ul>
         </Sidebar>
       );
