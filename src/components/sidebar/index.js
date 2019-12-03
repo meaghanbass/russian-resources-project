@@ -1,6 +1,6 @@
 import React from "react";
 import Tree from './tree';
-import {StaticQuery, graphql} from "gatsby";
+import {StaticQuery, graphql, Link} from "gatsby";
 import styled from "react-emotion";
 import {ExternalLink} from "react-feather";
 import '../styles.css';

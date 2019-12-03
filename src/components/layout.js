@@ -48,7 +48,7 @@ const Layout = ({ children, location }) => (
         <LeftSideBarWidth className={'hidden-xs w-1/4'}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
-        <Content className="flex flex-grow rounded-lg w-3/4 max-h-full bg-white overflow-scroll">
+        <Content className="flex flex-grow rounded-lg w-3/4 max-h-full bg-white overflow-scroll min-h-screen">
           <MaxWidth className="w-full">{children}</MaxWidth>
         </Content>
         {/* <RightSideBarWidth className={'hidden-xs hidden-sm hidden-md w-1/6'}>

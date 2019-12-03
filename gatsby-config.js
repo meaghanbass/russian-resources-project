@@ -1,21 +1,4 @@
 
-// const BlogQuery = '{
-//     allMdx(sort: {order: ASC, fields: frontmatter___title}) {
-//       edges {
-//         node {
-//           fields {
-//             title
-//           }
-//           frontmatter {
-//             tags
-//             metaDescription
-//           }
-//           rawBody
-//         }
-//       }
-//     }
-//   }';
-
 const queries = require("./src/utils/algolia");
 require("dotenv").config();
 
@@ -60,6 +43,13 @@ const plugins = [
       path: `${__dirname}/content/`
     }
   },
+  // {
+  //   resolve: "gatsby-source-filesystem",
+  //   options: {
+  //     name: "docs",
+  //     path: `${__dirname}/content-private/`
+  //   }
+  // },
   {
     resolve: `gatsby-plugin-gtag`,
     options: {
@@ -81,20 +71,7 @@ const plugins = [
     },
   }
 ];
-// if (config.header.search && config.header.search.enabled && config.header.search.algoliaAppId && config.header.search.algoliaAdminKey) {
-//   plugins.push({
-//     resolve: `gatsby-plugin-algolia`,
-//     options: {
-//       appId: config.header.search.algoliaAppId, // algolia application id
-//       apiKey: config.header.search.algoliaAdminKey, // algolia admin key to index
-//       // appId: process.env.ALGOLIA_APP_ID,
-//       // apiKey: process.env.ALGOLIA_API_KEY,
-//       // indexName: process.env.ALGOLIA_INDEX_NAME,
-//       queries,
-//       chunkSize: 1000, // default: 1000
-//     }}
-//   )
-// }
+
 module.exports = {
   pathPrefix: config.gatsby.pathPrefix,
   siteMetadata: {
