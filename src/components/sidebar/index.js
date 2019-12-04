@@ -48,7 +48,7 @@ const ListItem = styled(({ className, active, level, ...props }) => {
 
 const Sidebar = styled('aside')`
   background-color: #f2f1eb;
-  margin-top: 47px;
+  // margin-top: 47px;
   @media (min-width: 767px) and (max-width:1023px)
   {
     // padding-left: 0;
@@ -96,7 +96,7 @@ const SidebarLayout = ({location}) => (
     `}
     render={({allMdx}) => {
       return (
-        <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6">
+        <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8">
           <ul className={'sideBarUL'}>
             <Tree
               edges={allMdx.edges}

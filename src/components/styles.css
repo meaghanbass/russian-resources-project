@@ -145,6 +145,12 @@ footer {
   outline: none;
   border: 0;
 } */
+.searchWrapper {
+  background: var(--theme-accent);
+}
+.searchWrapper.navBarUL {
+  margin: 0;
+}
 .searchWrapper a {
   font-weight: 500;
 }
@@ -696,8 +702,9 @@ img {
     padding-left: 0 !important;
   }
   .searchWrapper {
-    padding: 10px 0;
-    padding-top: 20px;
+    /* padding: 10px 0;
+    padding-top: 20px; */
+    padding: 1.25rem;
   }
   .hitWrapper {
     width: 100%;

@@ -27,7 +27,7 @@ const Content = styled('main')`
   height: max-content;
 
   @media only screen and (max-width: 1023px) {
-    margin: 0 10px;
+    // margin: 0 10px;
     // margin-top: 3rem;
     margin-top: 0;
     margin-bottom: 3rem;

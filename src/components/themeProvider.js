@@ -8,9 +8,9 @@ export default function ThemeProvider({ children, theme = {}, location }) {
   return (
   	<div className="outerWrapper flex flex-col">
   		<Header location={location} />
-	    <EmotionThemeProvider theme={{ ...defaultTheme, ...theme }}>
-	      {children}
-	    </EmotionThemeProvider>
+			<EmotionThemeProvider theme={{ ...defaultTheme, ...theme }}>
+			{children}
+			</EmotionThemeProvider>
 		<Footer />
     </div>
   );
