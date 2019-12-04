@@ -9,7 +9,9 @@ const SearchIcon = styled(Search)`
   width: 1em;
   pointer-events: none;
   margin-right: 10px;
-  height: 100%;
+  // height: 100%;
+  color: white;
+  float: right;
 `
 // const focus = css`
 //   background: pink;
@@ -69,7 +71,7 @@ export default connectSearchBox(({ refine, ...rest }) => {
     <form id="docsearch" className="flex p-2 rounded-lg lg:w-full" 
       // className={'formElement'} 
       onSubmit={preventSubmit}>
-      <SearchIcon />
+      
       <Input
         className="input-bg text-black w-full"
         type="text"
@@ -78,6 +80,7 @@ export default connectSearchBox(({ refine, ...rest }) => {
         onChange={e => refine(e.target.value)}
         {...rest}
       />
+      <SearchIcon />
     </form>
   )}
 );

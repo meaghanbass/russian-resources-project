@@ -12,6 +12,9 @@ const Wrapper = styled('div')`
   overflow: hidden;
   width: 1170px;
   max-width: 1218px;
+  @media screen and (max-width: 1170px) {
+    width: 100vw;
+  }
   @media only screen and (max-width: 767px) {
     display: block;
   }
@@ -48,7 +51,7 @@ const Layout = ({ children, location }) => (
         <LeftSideBarWidth className={'hidden-xs w-1/4'}>
           <Sidebar location={location} />
         </LeftSideBarWidth>
-        <Content className="flex flex-grow rounded-lg w-3/4 max-h-full bg-white overflow-scroll min-h-screen">
+        <Content className="flex flex-grow w-full md:w-3/4 max-h-full bg-white overflow-scroll min-h-screen">
           <MaxWidth className="w-full">{children}</MaxWidth>
         </Content>
         {/* <RightSideBarWidth className={'hidden-xs hidden-sm hidden-md w-1/6'}>

@@ -93,7 +93,7 @@ footer {
 
 .navBarWrapper {
   background: #8C1515;
-  height: 60px;
+  min-height: 60px;
 }
 
 .input-bg:focus {

@@ -62,24 +62,26 @@ const Header = ({location}) => (
       const finalLogoLink = logo.link !== '' ? logo.link : '/';
       return (
         <div className={'navBarWrapper flex w-screen z-10'}>
-          <nav className={'navbar navBarDefault m-auto rounded-none border-0 flex items-center border-t-0 flex'}>
-            <div className={'navbar-header navBarHeader w-auto flex'}>
+          <nav className={'navbar navBarDefault m-auto rounded-none border-0 flex items-center border-t-0 flex justify-between'}>
+            <div className={'navbar-header navBarHeader w-auto flex mx-6'}>
               <Link to="/" className={'navbar-brand navBarBrand h-auto font-medium p-0 flex items-center leading-normal'}>
                 <div className={"headerTitle text-white"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
-              <button type="button" className={'navbar-toggle collapsed navBarToggle border-gray-800'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <button type="button" className={'navbar-toggle collapsed navBarToggle border-white'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span className={'sr-only'}>Toggle navigation</span>
-                <span className={'icon-bar bg-gray-800'}></span>
-                <span className={'icon-bar bg-gray-800'}></span>
-                <span className={'icon-bar bg-gray-800'}></span>
+                <span className={'icon-bar bg-white'}></span>
+                <span className={'icon-bar bg-white'}></span>
+                <span className={'icon-bar bg-white'}></span>
               </button>
             </div>
+
             {isSearchEnabled ? (
               <div className={'searchWrapper hidden-xs navBarUL p-0 relative w-auto flex'}>
                 <Search collapse indices={searchIndices} />
               </div>
               ): null}
-            <div id="navbar" className={'collapse navBarCollapse overflow-hidden sm:hidden lg:block md:w-0 flex'}>
+              
+            <div id="navbar" className={'collapse navBarCollapse theme-accent-bg overflow-hidden sm:block md:hidden md:w-0 flex'}>
               <div className={'flex flex-col md:hidden'}>
                 <Sidebar location={location} />
                 <hr/>
