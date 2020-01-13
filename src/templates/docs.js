@@ -119,6 +119,7 @@ export default class MDXRuntimeTest extends Component {
       });
 
     // meta tags
+    const siteTitle = 'REEHL';
     const metaTitle = mdx.frontmatter.metaTitle;
     const metaDescription = mdx.frontmatter.metaDescription;
     let canonicalUrl = config.gatsby.siteUrl;
@@ -128,7 +129,7 @@ export default class MDXRuntimeTest extends Component {
     return (
       <Layout {...this.props}>
         <Helmet>
-          {metaTitle ? <title>{metaTitle}</title> : null }
+          {metaTitle ? <title>{siteTitle} - {metaTitle}</title> : null }
           {metaTitle ? <meta name="title" content={metaTitle} /> : null}
           {metaDescription ? <meta name="description" content={metaDescription} /> : null}
           {metaTitle ? <meta property="og:title" content={metaTitle} /> : null}

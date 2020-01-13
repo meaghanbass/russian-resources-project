@@ -1,7 +1,7 @@
 ---
-title: "History"
-metaTitle: "Development"
-metaDescription: "miscellaneous"
+title: "Russia"
+metaTitle: "History | Russia"
+metaDescription: "History | Russia"
 tags: ["history"]
 ---
 

@@ -79,47 +79,10 @@ const Divider = styled(props => (
 
 
 const SidebarLayout = ({location}) => (
-  // <StaticQuery
-  //   query={graphql`
-  //     query {
-  //       allMdx(sort: {order: ASC, fields: frontmatter___title}) {
-  //         edges {
-  //           node {
-  //             fields {
-  //               slug
-  //               title
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `}
-  //   render={({allMdx}) => {
-  //     return (
-  //       <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8">
-  //         <ul className={'sideBarUL'}>
-  //           <Tree
-  //             edges={allMdx.edges}
-  //           />
-  //         </ul>
-  //       </Sidebar>
-  //     );
-  //   }}
-  // />
   <StaticQuery
     query={graphql`
       query {
-        dev: allMdx(sort: {order: ASC, fields: frontmatter___title}, filter: {frontmatter: {tags: {in: "dev"}}}) {
-          edges {
-            node {
-              fields {
-                slug
-                title
-              }
-            }
-          }
-        }
-        history: allMdx(sort: {order: ASC, fields: frontmatter___title}, filter: {frontmatter: {tags: {in: "history"}}}) {
+        allMdx(sort: {order: ASC, fields: frontmatter___title}) {
           edges {
             node {
               fields {
@@ -131,30 +94,12 @@ const SidebarLayout = ({location}) => (
         }
       }
     `}
-    render={({dev, history}) => {
+    render={({allMdx}) => {
       return (
-        <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8 md:mb-8">
-          {/* <h4>List One</h4>
+        <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8">
           <ul className={'sideBarUL'}>
-            {dev.edges.map(({ node }) => (
-              <li>
-                <span></span>
-                <Link className="hover:font-bold hover:text-gray-900" to='#'>
-                  {node.fields.title}
-                </Link>
-              </li>
-            ))}
-          </ul> */}
-          {/* <h4>Russia</h4> */}
-          <ul className={'sideBarUL'}>
-            {history.edges.map(({ node }) => (
-              <li>
-                <span></span>
-                <Link className="hover:font-bold hover:text-gray-900" to={node.fields.slug}>
-                  {node.fields.title}
-                </Link>
-              </li>
-            ))}
+            <Tree edges={allMdx.edges}>
+            </Tree>
           </ul>
         </Sidebar>
       );
@@ -185,14 +130,28 @@ const SidebarLayout = ({location}) => (
   //       }
   //     }
   //   `}
-  //   render={({allMdx, data}) => {
+  //   render={({dev, history}) => {
   //     return (
-  //       <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8">
+  //       <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8 md:mb-8">
+  //         {/* <h4>List One</h4>
   //         <ul className={'sideBarUL'}>
-  //           {data.dev.edges.map(({node}) => (
+  //           {dev.edges.map(({ node }) => (
   //             <li>
   //               <span></span>
-  //               <Link to={node.fields.slug}> {node.frontmatter.title} </Link>
+  //               <Link className="hover:font-bold hover:text-gray-900" to='#'>
+  //                 {node.fields.title}
+  //               </Link>
+  //             </li>
+  //           ))}
+  //         </ul> */}
+  //         {/* <h4>Russia</h4> */}
+  //         <ul className={'sideBarUL'}>
+  //           {history.edges.map(({ node }) => (
+  //             <li>
+  //               <span></span>
+  //               <Link className="hover:font-bold hover:text-gray-900" to={node.fields.slug}>
+  //                 {node.fields.title}
+  //               </Link>
   //             </li>
   //           ))}
   //         </ul>

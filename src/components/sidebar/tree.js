@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from "gatsby";
 import config from '../../../config';
 import TreeNode from './treeNode';
 
@@ -81,12 +82,17 @@ const Tree = ({edges}) => {
     });
   }
   return (
+    <>
+    <div class="item">
+      <Link className="hover:font-bold hover:text-gray-900 text-sm" to="/index">Home</Link>
+    </div>
     <TreeNode
       className={`${config.sidebar.frontLine ? 'showFrontLine' : 'hideFrontLine'} firstLevel`}
       setCollapsed={toggle}
       collapsed={collapsed}
       {...treeData}
     />
+    </>
   );
 }
 

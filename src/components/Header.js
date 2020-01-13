@@ -62,7 +62,7 @@ const Header = ({location}) => (
       const finalLogoLink = logo.link !== '' ? logo.link : '/';
       return (
         <div className={'navBarWrapper'}>
-          <nav className={'navbar navBarDefault m-auto rounded-none border-0 flex items-center border-t-0 flex justify-between'}>
+          <nav className={'navbar navBarDefault m-auto rounded-none border-0 flex justify-between'}>
             <div className={'navbar-header navBarHeader w-auto flex mx-6'}>
               <Link to="/" className={'navbar-brand navBarBrand h-auto font-medium p-0 flex items-center leading-normal'}>
                 <div className={"headerTitle text-white"} dangerouslySetInnerHTML={{__html: headerTitle}} />

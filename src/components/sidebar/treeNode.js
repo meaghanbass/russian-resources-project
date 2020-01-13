@@ -30,7 +30,7 @@ const TreeNode = ({className = '', setCollapsed, collapsed, url, title, items, .
       ) : null}
 
       {title && (
-        <Link className="hover:font-bold hover:text-gray-900"
+        <Link className="hover:font-bold hover:text-gray-900 py-1"
           to={url}
         >
           {title}

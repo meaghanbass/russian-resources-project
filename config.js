@@ -25,8 +25,8 @@ const config = {
 	},
 	"sidebar": {
 		"forcedNavOrder": [
-			"/introduction",
-    		"/codeblock"
+			// "/introduction"
+    		// "/codeblock"
 		],
 		"links": [
 			{ "text": "meaghanbass.io", "link": "https://meaghanbass.io"},
