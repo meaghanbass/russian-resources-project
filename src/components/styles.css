@@ -298,18 +298,19 @@ pre {
 }
 
 .sideBarUL li {
-  list-style-type: none;
+  /* list-style-type: circle; */
+  /* list-style-position: inside; */
   width: auto;
+  /* padding-left: 10px; */
+  padding-top: 7px;
+  padding-bottom: 7px;
+  /* text-indent: -10px; */
 }
 
 .sideBarUL li a {
-  /* color: #76787C; */
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  padding: 7px 24px 7px 16px;
-  padding-left: 10px;
-  padding-right: 25px;
   border-style: solid none solid solid;
   border-width: 1px 0px 1px 1px;
   border-color: transparent currentcolor transparent transparent;
@@ -408,8 +409,8 @@ pre {
 .titleWrapper {
   display: flex;
   align-items: center;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #76787C;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(157, 170, 182);
   margin-bottom: 32px;
 }
 
@@ -704,7 +705,7 @@ img {
   .searchWrapper {
     /* padding: 10px 0;
     padding-top: 20px; */
-    padding: 1.25rem;
+    padding: 0.5rem 1.25rem;
   }
   .hitWrapper {
     width: 100%;

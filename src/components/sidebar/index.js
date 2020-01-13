@@ -2,13 +2,13 @@ import React from "react";
 import Tree from './tree';
 import {StaticQuery, graphql, Link} from "gatsby";
 import styled from "react-emotion";
-import {ExternalLink} from "react-feather";
+// import {ExternalLink} from "react-feather";
 import '../styles.css';
 import config from '../../../config';
+import { Data } from "styled-icons/boxicons-regular";
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
-// eslint-disable-next-line no-unused-vars
 const ListItem = styled(({ className, active, level, ...props }) => {
     return (
       <li className={className}>
@@ -79,10 +79,47 @@ const Divider = styled(props => (
 
 
 const SidebarLayout = ({location}) => (
+  // <StaticQuery
+  //   query={graphql`
+  //     query {
+  //       allMdx(sort: {order: ASC, fields: frontmatter___title}) {
+  //         edges {
+  //           node {
+  //             fields {
+  //               slug
+  //               title
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `}
+  //   render={({allMdx}) => {
+  //     return (
+  //       <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8">
+  //         <ul className={'sideBarUL'}>
+  //           <Tree
+  //             edges={allMdx.edges}
+  //           />
+  //         </ul>
+  //       </Sidebar>
+  //     );
+  //   }}
+  // />
   <StaticQuery
     query={graphql`
       query {
-        allMdx(sort: {order: ASC, fields: frontmatter___title}) {
+        dev: allMdx(sort: {order: ASC, fields: frontmatter___title}, filter: {frontmatter: {tags: {in: "dev"}}}) {
+          edges {
+            node {
+              fields {
+                slug
+                title
+              }
+            }
+          }
+        }
+        history: allMdx(sort: {order: ASC, fields: frontmatter___title}, filter: {frontmatter: {tags: {in: "history"}}}) {
           edges {
             node {
               fields {
@@ -94,18 +131,75 @@ const SidebarLayout = ({location}) => (
         }
       }
     `}
-    render={({allMdx}) => {
+    render={({dev, history}) => {
       return (
-        <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8">
+        <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8 md:mb-8">
+          {/* <h4>List One</h4>
           <ul className={'sideBarUL'}>
-            <Tree
-              edges={allMdx.edges}
-            />
+            {dev.edges.map(({ node }) => (
+              <li>
+                <span></span>
+                <Link className="hover:font-bold hover:text-gray-900" to='#'>
+                  {node.fields.title}
+                </Link>
+              </li>
+            ))}
+          </ul> */}
+          {/* <h4>Russia</h4> */}
+          <ul className={'sideBarUL'}>
+            {history.edges.map(({ node }) => (
+              <li>
+                <span></span>
+                <Link className="hover:font-bold hover:text-gray-900" to={node.fields.slug}>
+                  {node.fields.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </Sidebar>
       );
     }}
   />
+  // <StaticQuery
+  //   query={graphql`
+  //     query {
+  //       dev: allMdx(sort: {order: ASC, fields: frontmatter___title}, filter: {frontmatter: {tags: {in: "dev"}}}) {
+  //         edges {
+  //           node {
+  //             fields {
+  //               slug
+  //               title
+  //             }
+  //           }
+  //         }
+  //       }
+  //       history: allMdx(sort: {order: ASC, fields: frontmatter___title}, filter: {frontmatter: {tags: {in: "history"}}}) {
+  //         edges {
+  //           node {
+  //             fields {
+  //               slug
+  //               title
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `}
+  //   render={({allMdx, data}) => {
+  //     return (
+  //       <Sidebar className="w-full h-auto overflow-auto sticky top-0 theme-text-color p-6 md:mt-8">
+  //         <ul className={'sideBarUL'}>
+  //           {data.dev.edges.map(({node}) => (
+  //             <li>
+  //               <span></span>
+  //               <Link to={node.fields.slug}> {node.frontmatter.title} </Link>
+  //             </li>
+  //           ))}
+  //         </ul>
+  //       </Sidebar>
+  //     );
+  //   }}
+  // />
 );
 
 export default SidebarLayout;

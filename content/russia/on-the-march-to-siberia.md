@@ -1,0 +1,40 @@
+---
+title: "On the March to Siberia"
+author: "Baroness M. De Packh"
+originalSource: "https://sourcebooks.fordham.edu/mod/1840depakh-siberia.asp"
+metaTitle: "On the March to Siberia | History | Russia"
+metaDescription: "On the March to Siberia | History | Russia"
+tags: ["history","russia","1840"]
+---
+
+No. 316 was branded on my bundle. I no longer had a name and my identity received even less consideration than is usually bestowed upon animals, for they are always designated by a name, never by a number.
+
+Our march to the mines was a continued succession of blows, curses, and hardships of every imaginable nature. Many of my fellow convicts succumbed to them, and fell by the way, being left there to die and be devoured by the wolves. A train of convicts on their way to the wilds of Siberia is a most distressing sight to witness. To describe it properly one must write words of fire with a sword dipped in blood. Pen and ink, and cold type seem too pale, too poor, too inadequate in every way to give a true account of that fearful journey.
+
+The convicts being weighed down by the heavy chain and ball can make little progress, and the march is dour and laborious, every step of the way being marked by bloodshed and suffering. Four persons, chained to each other, walk abreast, the first and last in the row dragging the heavy iron balls behind them. They are put on the prisoners to prevent their escape, it is said. Such an assertion is too absurd to be credited, however, for no one would be foolhardy enough to try to escape in that land of snow and desolation, where numbers prove the only safeguard against the ravenous wolves that infest the country. No, the ball and chain are merely accessories which add a little more torture to the convict's lot. They are intended as punishment, a constant reminder of the weight of the master's heavy hand, a daily, hourly irritation of flesh and spirit.
+
+Soldiers walk beside the line of weary, footsore travelers, carrying the whip which for centuries has made Russia infamous---the knout, a long heavy stick, to which are fastened from five to twenty strips of rawhide, the end of each thong interwoven with iron or heavy wire. The soldiers use them on their helpless victims just as in some countries farmers use fly whips to keep insects from annoying horses and oxen. With this difference---every blow from the knout raises great welts on the flesh, and draws blood, and the blows are bestowed, not for cause, but simply out of wanton cruelty and a fiendish delight in torturing.
+
+The weakest of the prisoners are generally placed in the first row. If they stumble and fall, those beside them are expected to aid and hold them up. If, after being thoroughly knouted, and given a short rest, they are still unable to stagger along, they are put in the carts which form part of the convoy, and carried on with the bundles and provisions. The carts are used more frequently for the fainting women than for the weary man. Women! Yes, many of them, often women of high rank and birth, aristocrats from head to foot, accustomed to being shielded from every hardship, used to every luxury money could obtain, ignorant of every sphere of life but that surrounded by wealth, love, and influence. While to any woman that march to Siberia is an awful thing, yet to the delicately bred the association with real criminals, the daily contact with the vile and degraded beings who deserve punishment for crimes and atrocities really committed, are by far the greatest hardships of all.
+
+A study of the faces in a convict gang shows the gamut of human passion written in deep lines upon each countenance. One sees the sullen, degraded criminal, born and bred in depravity, and the haughty, educated, sensitive aristocrat, reared in luxury and affluence. Few seem to ask your compassion, although one cannot restrain one's heart from pitying all. Some rave and curse, but the knout is applied to women as well as to men, and it soon hushes the openly rebellious into bearing the inevitable with obstinate gloom and enforced submission. They quickly learn that the best policy is to be as submissive as possible. The more the poor unfortunates bend their backs, the less trouble they give to their keepers, officers, and underlings, the better they fare.
+
+These servants of the mighty czar are a lazy, over-bearing, cruel lot of vagabonds, who treat the outcast with the same scorn and severity they themselves receive from their superiors. It is their duty to bring so many heads alive to designated places and to account for the lost as being dead. Before leaving a poor wretch on the way, the officer in charge assures himself of the utter uselessness of attempting to take the worn-out prisoner farther. Only when absolutely beyond human aid is she or he left to the mercy of the fierce and hungry wolves. It is an impossibility for any one to escape from
+
+the line. It would be madness to make the attempt. In the breast of every convict lives the hope of escape. He imagines that if once away from his tormentors some miracle would transport him to safety. His desire to evade the life before him makes him sometimes forget chain, hunger, the knout, and all his sufferings of mind and body. But he never tries to get away, knowing the futility of an attempt, and the terrible punishment he would receive when caught and returned to the gang.
+
+My fellow prisoner was, as I have said, a great, big, burly creature, sullen and gloomy. We were allowed to talk in an undertone as long as it pleased our keepers to permit us this privilege, and it was he who gave me the sulky and most ungracious advice, "to keep still and make the best of a bad bargain." My thoughts were a chaos. All I knew was that my soul was filled with revengeful rage. The remembrance of my parents, my love, my home, brought pain and misery. Every sweet recollection vanished behind a blood-red cloud. As the days passed, my temper did not improve; and under the hardships we had to endure, I often wondered that I had not become insane.
+
+The roads were bad, the chains grew heavier, the food was not fit for a dog, and long marches in snow and ice ended only with the close of each day. At night we were huddled around a fire, rolled up in our blankets, left to our maddening self-reproaches and thoughts. When sleep spread its merciful wings over us, our chain-bruised bodies were too weary to let wakefulness remind us of our misery. But as time heals all wounds, so does surrounding suffering help us to forget ourselves.
+
+After a week I commenced to take an interest in my associates. We were about forty in number. The women would be driven out of the wagons and forced to walk for hours at a time every day. There were eight of them, all political felons. They had no balls to drag, but were chained to one another. The weakest were marched in front, but always a stronger chained with a weaker; for support, it was said, but really to lighten the keeper's task. It soon told upon the stronger one.
+
+Many kindnesses I have witnessed among those poor wretches. I have seen them pick up a half-fainting and bleeding form and carry it a long distance. I have seen them receive the blows from the horrible knout by putting their own bodies in the way, to spare the weaker exile the stroke. I have seen them share their miserable meal, their scanty ration of water, with the more needy. I have myself received kindnesses, which solely enabled me to live, to carry out my revenge. And it was the little touches of human nature at its best that kept us from sinking to the level of our keepers. In being kind and considerate to each other we kept alive the spark of good that had not quite been beaten and kicked out of us by our brutal guards.
+
+---
+
+Source:
+
+From: Eva March Tappan, ed., The World's Story: A History of the World in Story, Song and Art, (Boston: Houghton Mifflin, 1914), Vol. VI: Russia, Austria-Hungary, The Balkan States, and Turkey, pp. 182-186.
+
+Scanned by Jerome S. Arkenberg, Cal. State Fullerton. The text has been modernized by Prof. Arkenberg.

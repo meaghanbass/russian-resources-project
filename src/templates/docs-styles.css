@@ -1,6 +1,5 @@
-.markdown-body {
+/* .markdown-body {
     color: #4a5568 !important;
-    /* font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
     font-family: 'Arial' !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -9,10 +8,6 @@
 .markdown-body * ::selection {
     background: #e2e8f0;
 }
-
-/* .markdown-body .mainWrapper * {
-    line-height: 2rem;
-} */
 
 .markdown-body * b, .markdown-body * strong {
     font-weight: 600 !important;
@@ -94,14 +89,19 @@
 
 .markdown-body ul li::before {
     content: '';
-    width: 1.5rem;
-    height: 1.5rem;
     display: inline-block;
-    margin-left: -3rem;
+    margin-right: 5px;
+    border: 1px #a0aec0 solid;
+    border-radius: 5px;
+    height: 5px;
+    width: 5px;
+    margin-bottom: 3px;
+    margin-left: -21px;
+    position: relative;
+    z-index: 100;
 }
 
 .markdown-body ul li ul li {
-    /* margin-left: 1.5rem; */
     padding-left: 21px;
 }
 
@@ -144,15 +144,6 @@ mark {
     font-size: 0.75rem;
 }
 
-/* mark:hover::after {
-    content: attr(data-tooltip);
-    background: white;
-    padding: 5px;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 0 0 3px 0 lightgray;
-} */
-
 ins {
     width: max-content;
     display: inline-block;
@@ -175,10 +166,6 @@ table {
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-table tr td:nth-child(1) {
-    /* min-width: 200px; */
 }
 
 table tr:nth-child(2n) {
@@ -215,4 +202,4 @@ audio {
     width: 50px;
     clip-path: circle(20px at center);
     margin: auto;
-}
+} */

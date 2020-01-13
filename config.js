@@ -7,7 +7,8 @@ const config = {
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
 		"logoLink": "https://meaghanbass.io",
-		"title": "Russian & Eastern European Historical Library",
+		// "title": "Russian & Eastern European Historical Library",
+		"title": "HEADER TITLE",
 		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
 		"helpUrl": "",
 		"tweetText": "",
@@ -34,7 +35,8 @@ const config = {
 		"ignoreIndex": true,
 	},
 	"siteMetadata": {
-		"title": "Russian & Eastern European Historical Library",
+		// "title": "Russian & Eastern European Historical Library",
+		"title": "SITEMETADATA TITLE",
 		"description": "Documentation built with mdx.",
 		"ogImage": null,
 		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
